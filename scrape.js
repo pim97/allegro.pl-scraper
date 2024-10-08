@@ -22,6 +22,7 @@ async function run() {
         const scrape = await scrappey.get({
             "url": "https://allegro.pl/oferta/komplet-garnkow-indukcja-zestaw-patelnie-marmurowe-garnki-pokrywki-10el-15053253636#aboutSeller",
             "session": session.session,
+            "datadomeBypass": true
         })
 
         console.log(JSON.stringify(scrape.solution, undefined, 4))
